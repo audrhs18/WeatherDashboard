@@ -1,0 +1,21 @@
+#headerLine{
+    background-color: blue;
+    color: whitesmoke;
+    text-align: center;
+    padding: 10px;
+}
+
+#forecastFrame{
+    display: flex;
+    flex-direction: row;
+}
+
+.forecastCard{
+    background-color: blueviolet;
+    margin: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#todayWeatherDiv{
+    border: solid black;
+}

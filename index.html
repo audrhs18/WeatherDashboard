@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Dashboard</title>
+    <link rel = "stylesheet"  href="./Style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
+                integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- Load icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+</head>
+<body>
+    <header>
+        <div>
+            <H1 id = headerLine>Weather Dashboard</H1>;
+        </div>  
+    </header>
+<br/>
+<div class="container-fluid">
+    <div class=row>
+        <!-- search City -->
+        <div class="col-md-3">
+            <!-- The form -->
+            <form class="example" action="action_page.php">
+            <input type="text" placeholder="Search.." name="search">
+            <button type="submit" id='searchBtn'><i class="fa fa-search" id='searchBtn'></i></button>
+            </form>
+        </div>
+        <!-- result of city weather -->
+        <div class="col-md-9">
+            <div id = "todayWeatherDiv">
+                <H2 id = "cityInfo">Please Select city in left search function</H2>
+                <p id = "detailInfo">weather detail information</p>
+                <Ul>
+                    <li id = "todayTemp">Today Temperature</li>
+                    <li id = "todayWind">Today Wind</li>
+                    <li id = "todayHumidity">Today Humidity</li>
+                    <li id = "uvIndex">UV Index</li>
+                </Ul>
+            </div>
+        </br></br></br>
+            <div>
+                <p>5-days forecast</p>
+                <div id = "forecastFrame">
+                    <div class = "forecastCard" id = "one">
+                        <ul>
+                            <li class = "date">date</li>
+                            <img class = "icon">
+                            <li class = "temp">temp</li>
+                            <li class = "wind">wind</li>
+                            <li class = "humidity">humidity</li>
+                        </ul>
+                    </div>
+
+                     <div class = "forecastCard" id = "two">
+                         <ul>
+                            <li class = "date">date</li>
+                            <img class = "icon">
+                            <li class = "temp">temp</li>
+                            <li class = "wind">wind</li>
+                            <li class = "humidity">humidity</li>
+                         </ul>
+                    </div>
+
+                    <div class = "forecastCard" id = "three">
+                         <ul>
+                            <li class = "date">date</li>
+                            <img class = "icon">
+                            <li class = "temp">temp</li>
+                            <li class = "wind">wind</li>
+                            <li class = "humidity">humidity</li>
+                         </ul>
+                    </div>
+
+                    <div class = "forecastCard" id = "four">
+                         <ul>
+                            <li class = "date">date</li>
+                            <img class = "icon">
+                            <li class = "temp">temp</li>
+                            <li class = "wind">wind</li>
+                            <li class = "humidity">humidity</li>
+                         </ul>
+                    </div>
+
+                    <div class = "forecastCard" id = "five">
+                        <ul>
+                            <li class = "date">date</li>
+                            <img class = "icon">
+                            <li class = "temp">temp</li>
+                            <li class = "wind">wind</li>
+                            <li class = "humidity">humidity</li>
+                        </ul>
+                   </div>
+
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+    <script src="./Script.js"></script>    
+</body>
+</html>
